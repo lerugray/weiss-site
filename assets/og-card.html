@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=1200">
+  <title>OG Card — WEISS</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      width: 1200px;
+      height: 630px;
+      overflow: hidden;
+      background: #0b0907;
+      font-family: 'Courier New', 'Lucida Console', monospace;
+      color: #ede5d5;
+      position: relative;
+    }
+
+    /* Diagonal texture lines */
+    .bg-lines {
+      position: absolute;
+      inset: 0;
+      background:
+        repeating-linear-gradient(
+          -55deg,
+          transparent 0px,
+          transparent 60px,
+          rgba(160,112,20,0.025) 60px,
+          rgba(160,112,20,0.025) 62px
+        );
+      pointer-events: none;
+    }
+
+    /* Top color bar */
+    .top-bar {
+      position: absolute;
+      top: 0; left: 0; right: 0;
+      height: 6px;
+      background:
+        repeating-linear-gradient(
+          90deg,
+          #a07020 0px, #a07020 3px,
+          transparent 3px, transparent 8px,
+          #3d2908 8px, #3d2908 9px,
+          transparent 9px, transparent 18px
+        );
+    }
+
+    /* Bottom rule */
+    .bottom-bar {
+      position: absolute;
+      bottom: 0; left: 0; right: 0;
+      height: 4px;
+      background: linear-gradient(90deg, transparent, #6b4a12 30%, #6b4a12 70%, transparent);
+      opacity: 0.6;
+    }
+
+    /* Side rule left */
+    .side-rule {
+      position: absolute;
+      top: 6px; bottom: 4px;
+      left: 56px;
+      width: 1px;
+      background: linear-gradient(180deg, transparent, #3d2908 20%, #3d2908 80%, transparent);
+      opacity: 0.5;
+    }
+
+    /* Corner label */
+    .corner-label {
+      position: absolute;
+      top: 28px;
+      left: 40px;
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      color: #5e4e38;
+      text-transform: uppercase;
+      writing-mode: vertical-rl;
+      text-orientation: mixed;
+      transform: rotate(180deg);
+    }
+
+    /* Lab crumb top */
+    .lab-crumb {
+      position: absolute;
+      top: 24px;
+      left: 80px;
+      font-size: 12px;
+      letter-spacing: 0.14em;
+      color: #5e4e38;
+      text-transform: uppercase;
+    }
+
+    /* Main content block */
+    .main-block {
+      position: absolute;
+      top: 50%;
+      left: 80px;
+      right: 80px;
+      transform: translateY(-50%);
+    }
+
+    .title {
+      font-size: 128px;
+      font-weight: 700;
+      letter-spacing: 0.22em;
+      color: #ede5d5;
+      line-height: 1;
+      text-shadow:
+        0 0 120px rgba(200,146,42,0.25),
+        0 0 40px rgba(200,146,42,0.12);
+      margin-bottom: 18px;
+    }
+
+    .divider {
+      width: 480px;
+      height: 1px;
+      background: linear-gradient(90deg, #6b4a12, transparent);
+      margin-bottom: 22px;
+    }
+
+    .tagline {
+      font-size: 22px;
+      letter-spacing: 0.12em;
+      color: #d4a844;
+      font-style: italic;
+      margin-bottom: 14px;
+    }
+
+    .frame {
+      font-size: 15px;
+      letter-spacing: 0.06em;
+      color: #a89070;
+      line-height: 1.65;
+      max-width: 680px;
+    }
+
+    /* Bottom right stamp */
+    .stamp {
+      position: absolute;
+      bottom: 28px;
+      right: 56px;
+      text-align: right;
+    }
+
+    .stamp-text {
+      font-size: 11px;
+      letter-spacing: 0.16em;
+      color: #5e4e38;
+      text-transform: uppercase;
+      display: block;
+      line-height: 1.8;
+    }
+
+    .stamp-accent {
+      color: #d4a844;
+    }
+  </style>
+</head>
+<body>
+
+<div class="bg-lines"></div>
+<div class="top-bar"></div>
+<div class="bottom-bar"></div>
+<div class="side-rule"></div>
+
+<span class="corner-label">W E I S S</span>
+<span class="lab-crumb">The Elect voice lab / creative partner</span>
+
+<div class="main-block">
+  <div class="title">WEISS</div>
+  <div class="divider"></div>
+  <div class="tagline">the partner that argues back</div>
+  <div class="frame">
+    An AI grounded in one person's entire body of work.<br>
+    Game design and music. Built to provoke the maker, not optimize him.
+  </div>
+</div>
+
+<div class="stamp">
+  <span class="stamp-text">Private weights. Shared output.</span>
+  <span class="stamp-text"><span class="stamp-accent">lerugray.github.io/weiss-site</span></span>
+</div>
+
+</body>
+</html>
