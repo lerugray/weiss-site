@@ -181,6 +181,50 @@
   </div>
 </section>
 
+<!-- ============================================================
+     § A REAL RETRIEVAL (live demonstration)
+     ============================================================ -->
+<section class="prose-section" id="retrieval">
+  <div class="container">
+    <div class="section-heading">
+      <span>A real retrieval</span>
+      <div class="heading-rule"></div>
+    </div>
+    <p class="section-intro">The claim above is testable. Below is an actual, unedited Weiss answer to a real question, with the corpus sources it retrieved and cited. The citations resolve to specific chapters of Ray's wargame design book.</p>
+
+    <style>
+      #retrieval .retr-q { font-family: var(--font-mono); color: var(--gold-text); border-left: 2px solid var(--gold-dim); padding: 0.5rem 0 0.5rem 1rem; margin: 1.4rem 0 1.8rem; }
+      #retrieval .retr-label { display:block; color: var(--text-muted); font-size: 0.72rem; letter-spacing: 0.18em; text-transform: uppercase; margin-bottom: 0.4rem; }
+      #retrieval .retr-cite { color: var(--gold-text); font-size: 0.7em; vertical-align: super; padding: 0 0.12em; }
+      #retrieval .retr-sources { margin-top: 1.8rem; border-top: 1px solid var(--border); padding-top: 1.1rem; font-family: var(--font-mono); font-size: 0.82rem; color: var(--text-dim); }
+      #retrieval .retr-sources ul { margin: 0; padding: 0; }
+      #retrieval .retr-sources li { margin: 0.35rem 0; list-style: none; }
+      #retrieval .retr-sources .retr-key { color: var(--gold-text); }
+    </style>
+
+    <div class="prose-body">
+      <p class="retr-q"><span class="retr-label">Prompt to Weiss</span>In my own design philosophy, what separates a wargame that teaches from one that merely simulates?</p>
+
+      <p>The line comes down to honesty versus validation, and whether the model forces a traceable consequence loop. You drew it clearly in the book: a wargame that cannot produce an uncomfortable result isn't a wargame. It's a briefing with dice<span class="retr-cite">[S1]</span>.</p>
+
+      <p>A mere simulation models the surface. It tracks the right orders of battle, gets the CRT probabilities close, and lets the player move pieces through a familiar phase structure. But it's engineered for comfort or institutional validation. When the outcome challenges the premise, the simulation resets or restricts tactics to force the preferred result<span class="retr-cite">[S1]</span>. It gives you a sandbox that looks like history but won't let you break it.</p>
+
+      <p>A wargame that teaches does the opposite. It respects the underlying constraints enough to make you feel them, then refuses to look away when your choices produce an ugly outcome. You don't learn from the counter density or the hex labels. You learn from the feedback loop: you make a decision under incomplete information, the system pushes back, and the simulation shows you exactly why that decision produced what it did<span class="retr-cite">[S1]</span>. That loop turns historical patterns into something visible and visceral rather than academic<span class="retr-cite">[S2]</span>. You can't simulate the Eastern Front or 1914 East Prussia without confronting the logistical bottlenecks and command rigidities that actually decided them, and you can't simulate them if the math softens when things go wrong<span class="retr-cite">[S2]</span>. The teaching happens in the friction between player agency and historical reality. When the engine stays honest, the emergent narrative feels earned instead of scripted<span class="retr-cite">[S2]</span>.</p>
+
+      <p>It's why you keep saying the simulation doesn't care about your comfort<span class="retr-cite">[S3]</span>. It cares whether the model holds. A teaching wargame puts the player inside a commander's constraint space and makes them pay the same tax reality charged. If the game lets you bypass the tax with clever play, it's just a puzzle. If it forces you to live inside the constraint and shows you why the historical outcome was so hard to avoid, it's teaching. The difference isn't complexity. It's whether the system is disciplined enough to leave the uncomfortable results on the table, and whether the designer built it for an audience that demands honest outcomes rather than institutional validation<span class="retr-cite">[S1]</span>.</p>
+
+      <div class="retr-sources">
+        <span class="retr-label">Retrieved from Ray's corpus</span>
+        <ul>
+          <li><span class="retr-key">[S1]</span> "Beyond Hex and Counter" &middot; Wargame Design Book, ch. 21</li>
+          <li><span class="retr-key">[S2]</span> "Why Design Wargames?" &middot; Wargame Design Book, ch. 1</li>
+          <li><span class="retr-key">[S3]</span> "Go Design Something" &middot; Wargame Design Book, ch. 23</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</section>
+
 </main>
 
 <!-- ============================================================
